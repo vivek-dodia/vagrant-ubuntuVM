@@ -18,12 +18,6 @@ vagrant destroy
 ```
 
 ```
-vagrant ssh```
-
-```
-limiter = Limiter(key_func=get_remote_address, default_limits=["100 per day", "20 per hour"])
+vagrant ssh
 ```
 
-```
-limiter = Limiter(key_func=get_remote_address, default_limits=["100 per day", "20 per hour"])
-```
