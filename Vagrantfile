@@ -9,6 +9,8 @@ Vagrant.configure('2') do |config|
         vb.memory = '8192'
       end
 
+      config.vm.network "public_network", bridge: "Realtek PCIe GbE Family Controller"
+
       # Provisioning block to install packages
       machine.vm.provision "shell", inline: <<-SHELL
         # Update and upgrade the system
